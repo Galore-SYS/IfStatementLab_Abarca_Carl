@@ -25,3 +25,33 @@ if (userAgeInput < 13) {
 }
 
 }
+
+
+// Problem 2: Temperature Evaluation 
+
+import java.util.Scanner;
+
+
+public class tempeval {
+
+    
+    public static void main (String[] arg) {
+
+System.out.println("Good day!");
+System.out.println("What is today's temperature in celsius?: ");
+
+Scanner tempEval = new Scanner(System.in);
+double  tempEvalinput = tempEval.nextDouble();
+
+
+
+if (tempEvalinput < 0 ) {
+    System.out.println("Freezing!");
+} else if (tempEvalinput >= 0 && tempEvalinput <= 25 ) {
+    System.out.println("Nomral Weather");
+} else if (tempEvalinput > 25) {
+    System.out.println("Hot Weather");
+}
+
+    }
+}
