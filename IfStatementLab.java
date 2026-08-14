@@ -55,3 +55,38 @@ if (tempEvalinput < 0 ) {
 
     }
 }
+
+
+
+
+// Problem 3: Simple Grade Evaluator
+
+import java.util.Scanner;
+
+public class gradeevaluator {
+
+public static void main (String[] arg) {
+
+
+System.out.println("Greetings."); 
+System.out.println("Enter the grade you want evaluated: "); 
+
+Scanner gradeInput = new Scanner(System.in);
+int userGradeInput = gradeInput.nextInt();
+
+
+if (userGradeInput >= 90 && userGradeInput <= 100) {
+    System.out.println("Excellent");
+} else if (userGradeInput >= 75 && userGradeInput <= 89) {
+    System.out.println("Good");
+} else if (userGradeInput < 75) {  
+    System.out.println("Needs Improvement");
+} else { System.out.println("Input an actual grade. Try again.");
+}
+
+}
+
+}
+
+
+
