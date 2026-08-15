@@ -114,6 +114,29 @@ public class CircleCalculator {
 } 
 
 
+// Problem 5: Even or Odd Number
+
+import java.util.Scanner;
+
+public class EvenOdd {
+    
+    public static void main (String[] arg) {
+
+        System.out.println("Hello.");
+        System.out.println("I'd like to check if your number is odd or even, can you kindly input in your number?: ");
+
+        Scanner OddEvenCheck = new Scanner(System.in);
+        int OEInput = OddEvenCheck.nextInt();
+
+        if (OEInput % 2 == 0) { 
+            System.out.println("Even");
+        } else { 
+            System.out.println("Odd");
+        }
+
+
+    }
+}
 
 
 
