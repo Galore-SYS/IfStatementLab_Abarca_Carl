@@ -89,4 +89,32 @@ if (userGradeInput >= 90 && userGradeInput <= 100) {
 }
 
 
+// Problem 4: Circle Calculator
+
+import java.util.Scanner;
+
+public class CircleCalculator {
+
+    public static void main(String[] arg) {
+
+        System.out.println("Salutations!");
+        System.out.println("Enter the radius of the circle: ");
+
+        Scanner radiusInput = new Scanner(System.in);
+        double  userRInput = radiusInput.nextDouble();
+
+        double circumference = 2 * Math.PI * userRInput;
+        double area = Math.PI * Math.pow(userRInput, 2);
+        
+        System.out.println("The area of your cirlce is " + area + ", and the circumeference is " + circumference);
+
+
+
+    }
+} 
+
+
+
+
+
 
